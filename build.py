@@ -351,9 +351,8 @@ def write_redirects(pages):
 
 
 def write_robots(pages):
-    disallow = "".join(f"Disallow: {p['path']}\n" for p in pages if p["key"] == "thanks")
     (PUBLIC / "robots.txt").write_text(
-        f"User-agent: *\nAllow: /\n{disallow}\nSitemap: {SITE}/sitemap.xml\n", encoding="utf-8")
+        f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n", encoding="utf-8")
 
 
 def write_headers():

@@ -141,40 +141,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* --- Contact form: submit in place (Netlify Forms), fall back to email on failure --- */
-  const contactForm = document.querySelector('form.contact-form');
-  if (contactForm && window.fetch) {
-    const okMsg = contactForm.querySelector('[data-status="success"]');
-    const errMsg = contactForm.querySelector('[data-status="error"]');
-    const submitBtn = contactForm.querySelector('button[type="submit"]');
-
-    contactForm.addEventListener('submit', async (e) => {
-      if (!contactForm.checkValidity()) return; // let the browser show field errors
-      e.preventDefault();
-      okMsg.hidden = true;
-      errMsg.hidden = true;
-      const label = submitBtn.textContent;
-      submitBtn.disabled = true;
-      submitBtn.textContent = contactForm.dataset.sending || label;
-      try {
-        const res = await fetch(contactForm.getAttribute('action'), {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: new URLSearchParams(new FormData(contactForm)).toString(),
-        });
-        if (!res.ok) throw new Error(res.status);
-        contactForm.reset();
-        okMsg.hidden = false;
-        okMsg.focus?.();
-      } catch (err) {
-        errMsg.hidden = false;
-      } finally {
-        submitBtn.disabled = false;
-        submitBtn.textContent = label;
-      }
-    });
-  }
-
   /* --- Static hosts with a single 404 page: send /vi/ misses to the Vietnamese 404 --- */
   if (document.body.dataset.page === '404' && document.documentElement.lang !== 'vi'
       && /\/vi\//.test(window.location.pathname)) {

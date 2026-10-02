@@ -19,7 +19,6 @@ netlify.toml         publishes public/ only
   the EN/VI switcher in the navbar and alternates in `sitemap.xml`.
 - Navbar/footer text for each language lives in `LANGS` in `build.py`.
 - Links inside Vietnamese pages must use the `/vi/` prefix (e.g. `/vi/contact`).
-- Both contact forms post to the same Netlify form (`contact`); the hidden `lang` field shows which version was used.
 - Adding a language: add an entry to `LANGS`, create `src/pages/<lang>/` and add its font subset if needed.
 
 ## Edit and build
@@ -38,13 +37,12 @@ content hash to their URLs, so browsers pick up changes right away.
 `./deploy-preview.sh` builds with `BASE_PATH=/<repo>` and `PREVIEW=1` (all pages
 `noindex`) and force-pushes the result to the `gh-pages` branch, which GitHub Pages
 serves at `https://<user>.github.io/<repo>/`. Run it after committing to update the
-preview. The contact form only works on Netlify.
+preview.
 
 ## Deploy (Netlify)
 
 - Connect the repo. The publish directory and build command come from `netlify.toml`.
 - Add `www.magentiz.com` as the primary domain and `magentiz.com` as an alias, which redirects to www.
-- Contact form submissions: Netlify dashboard → Forms → `contact`. Add an email notification there.
 
 ## Vietnamese glossary
 
