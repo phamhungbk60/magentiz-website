@@ -80,7 +80,6 @@ LANGS = {
             "f_contact": "Contact",
             "rights": "All rights reserved.",
             "crumb_home": "Home",
-            "parent_note": 'A Magento team by <a href="https://www.opentechiz.com/" rel="noopener">Open Techiz</a>.',
             "org_description": "Magento engineering team: high-availability Magento infrastructure, "
                                "end-to-end Magento development, automation testing, DevOps, monitoring "
                                "and AI-assisted delivery.",
@@ -116,7 +115,6 @@ LANGS = {
             "f_contact": "Liên hệ",
             "rights": "Bảo lưu mọi quyền.",
             "crumb_home": "Trang chủ",
-            "parent_note": 'Đội ngũ Magento của <a href="https://www.opentechiz.com/" rel="noopener">Open Techiz</a>.',
             "org_description": "Đội ngũ kỹ sư Magento: hạ tầng Magento hoạt động liên tục, phát triển Magento "
                                "trọn gói, kiểm thử tự động, DevOps, giám sát và quy trình làm việc có AI hỗ trợ.",
         },
@@ -182,11 +180,6 @@ def jsonld(meta):
                        "Kubernetes", "AWS", "New Relic", "Tideways", "Grafana", "Checkly",
                        "Selenium", "Claude", "OpenAI", "Antigravity"],
         "sameAs": ["https://github.com/magentiz"],
-        "parentOrganization": {
-            "@type": "Organization",
-            "name": "Open Techiz",
-            "url": "https://www.opentechiz.com/",
-        },
     }
     page = {
         "@type": "WebPage",

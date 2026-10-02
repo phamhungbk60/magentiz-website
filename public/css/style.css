@@ -1,7 +1,6 @@
 /* =============================================
-   MAGENTIZ — Stylesheet v1
-   Based on the Open Techiz design system, rebranded:
-   near-black surfaces + Magentiz yellow (#FBC03D)
+   MAGENTIZ — Stylesheet
+   Near-black surfaces + Magentiz yellow (#FBC03D)
    ============================================= */
 /* --- Fonts (self-hosted, variable woff2) --- */
 /* Inter — latin-ext */
@@ -2341,33 +2340,10 @@ html.light .stack-check-val.ok {
   line-height: 1.65;
 }
 
-/* --- Part of Open Techiz (about) + footer note --- */
-.parent-strip {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 72px;
-  align-items: start;
-}
-
-.text-link {
-  color: var(--accent);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.footer-parent {
-  margin-top: 12px;
-  font-size: 0.85rem;
-  color: var(--text-muted);
-}
-
-.footer-parent a {
-  color: var(--accent);
-}
+/* --- Inline text links --- */
 
 @media (max-width: 1024px) {
-  .case-study,
-  .parent-strip {
+  .case-study {
     grid-template-columns: 1fr;
     gap: 32px;
   }
@@ -2377,11 +2353,6 @@ html.light .stack-check-val.ok {
   .case-study {
     padding: 28px 20px;
   }
-}
-
-.footer-parent a {
-  text-decoration: underline;
-  text-underline-offset: 3px;
 }
 
 /* =============================================
@@ -3040,7 +3011,6 @@ h1, h2, h3,
 .grid-2,
 .service-grid,
 .about-split,
-.parent-strip,
 .ai-full-grid,
 .faq-layout {
   grid-template-columns: 1fr;
@@ -3414,8 +3384,7 @@ h1, h2, h3,
   }
 
   .grid-2,
-  .about-split,
-  .parent-strip {
+  .about-split {
     grid-template-columns: 1fr 1fr;
     gap: 72px;
   }
