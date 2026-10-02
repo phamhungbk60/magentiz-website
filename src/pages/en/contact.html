@@ -35,7 +35,7 @@ description: Request a free Magento audit or talk to a Magento engineer about pe
       <div class="contact-layout">
 
         <!-- Form (handled by Netlify Forms) -->
-        <form class="contact-form" name="contact" method="POST" action="/thanks" data-netlify="true" netlify-honeypot="company_website">
+        <form class="contact-form" name="contact" method="POST" action="/thanks" data-netlify="true" netlify-honeypot="company_website" data-sending="Sending…">
           <input type="hidden" name="form-name" value="contact">
           <input type="hidden" name="lang" value="en">
           <p class="hp-field" aria-hidden="true">
@@ -84,6 +84,8 @@ description: Request a free Magento audit or talk to a Magento engineer about pe
 
           <button type="submit" class="btn btn-primary">Send Message</button>
           <p class="form-note">We only use your details to reply to this request.</p>
+          <p class="form-status is-success" role="status" hidden data-status="success">Thanks! Your message has been sent. A Magento engineer will reply within one business day.</p>
+          <p class="form-status is-error" role="alert" hidden data-status="error">Sorry, your message could not be sent from this page. Please email us at <a href="mailto:{{email}}">{{email}}</a>.</p>
         </form>
 
         <!-- Side info -->

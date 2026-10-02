@@ -55,6 +55,7 @@ LANGS = {
         "label": "EN",
         "name": "English",
         "og_locale": "en_US",
+        "og_image": "og-image.png",
         "strings": {
             "skip": "Skip to content",
             "nav_label": "Main navigation",
@@ -90,6 +91,7 @@ LANGS = {
         "label": "VI",
         "name": "Tiếng Việt",
         "og_locale": "vi_VN",
+        "og_image": "og-image-vi.png",
         "strings": {
             "skip": "Chuyển đến nội dung",
             "nav_label": "Điều hướng chính",
@@ -156,6 +158,16 @@ def parse_page(path, lang):
     return meta
 
 
+def faq_entries(content):
+    """(question, answer) pairs from <details class="faq-item"> blocks, for FAQPage data."""
+    pairs = []
+    for q, a in re.findall(r'<details class="faq-item">\s*<summary>(.*?)</summary>\s*'
+                           r'<div class="faq-answer">(.*?)</div>', content, re.S):
+        clean = lambda t: html.unescape(" ".join(re.sub(r"<[^>]+>", " ", t).split()))
+        pairs.append((clean(q), clean(a)))
+    return pairs
+
+
 def jsonld(meta):
     lang = meta["lang"]
     org = {
@@ -193,6 +205,18 @@ def jsonld(meta):
         "publisher": {"@id": f"{SITE}/#organization"},
     }
     graph = [org, website, page]
+    faq = faq_entries(meta["content"])
+    if faq:
+        graph.append({
+            "@type": "FAQPage",
+            "@id": SITE + meta["path"] + "#faq",
+            "inLanguage": lang,
+            "mainEntity": [
+                {"@type": "Question", "name": q,
+                 "acceptedAnswer": {"@type": "Answer", "text": a}}
+                for q, a in faq
+            ],
+        })
     if meta["key"] != "index" and meta.get("breadcrumb"):
         home = LANGS[lang]["strings"]["crumb_home"]
         page["breadcrumb"] = {
@@ -238,6 +262,8 @@ def render(layout, meta, siblings, versions):
     conf = LANGS[lang]
     values = {
         "lang": lang,
+        "page_key": meta["key"],
+        "og_image": conf["og_image"],
         "og_locale": conf["og_locale"],
         "p": conf["prefix"],
         "home": page_path(lang, "index"),
@@ -262,6 +288,15 @@ def render(layout, meta, siblings, versions):
     if leftover:
         raise SystemExit(f"{meta['path']}: unresolved placeholders {leftover}")
     return out
+
+
+def soften_heading_breaks(page_html):
+    """<br> inside headings becomes ' <br class="br-lg">': a line break on wide
+    screens, a plain space on phones (see .br-lg in style.css)."""
+    def fix(m):
+        return re.sub(r"\s*<br>\s*", ' <br class="br-lg">', m.group(0))
+    return re.sub(r'<(h[1-3])\b[^>]*>.*?</\1>|<p class="contact-display-title">.*?</p>',
+                  fix, page_html, flags=re.S)
 
 
 def with_base_path(page_html):
@@ -365,7 +400,7 @@ def main():
     for p in pages:
         out = PUBLIC / p["file"]
         out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(with_base_path(render(layout, p, groups[p["key"]], versions)), encoding="utf-8")
+        out.write_text(with_base_path(soften_heading_breaks(render(layout, p, groups[p["key"]], versions))), encoding="utf-8")
         print(f"built {out.relative_to(ROOT)}")
 
     for key, siblings in groups.items():

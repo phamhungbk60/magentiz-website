@@ -30,7 +30,7 @@
   <meta name="twitter:image" content="https://www.magentiz.com/images/og-image.png">
   <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/css/style.css?v=bc8b4f999d">
+  <link rel="stylesheet" href="/css/style.css?v=286a8c5335">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -108,12 +108,67 @@
           }
         ]
       }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.magentiz.com/services#faq",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which Magento versions do you work with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Magento 2 Open Source and Adobe Commerce. We build new stores, take over existing ones, upgrade older Magento 2 versions and migrate stores from other platforms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you take over a store built by another agency?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We start with an audit of the code, extensions, infrastructure and release process, so we know the risks before we change anything. Then we document what we find and agree on priorities with you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do we have to move to AWS and Kubernetes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We recommend infrastructure based on your traffic, catalog size and budget. Often the first gains come from fixing caching, search and slow code on your current hosting. We only propose a move when the numbers justify it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you use AI without putting our code or data at risk?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We agree with you upfront which AI tools may be used on your code and data. AI helps us read code, draft changes and write tests, but every change is reviewed by an engineer and goes through the same tests and release process as any other."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the free Magento audit include?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A review of performance (profiled with New Relic or Tideways), infrastructure, caching, search, extensions and your release process. You get a written, prioritized list of fixes, whether or not you work with us afterwards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do engagements and pricing work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Three models: a fixed-scope audit, project delivery with an agreed scope, or a dedicated Magento team billed monthly. After a short call we send an estimate based on your actual store."
+          }
+        }
+      ]
     }
   ]
 }
   </script>
 </head>
-<body>
+<body data-page="services">
   <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- NAVBAR -->
@@ -154,7 +209,7 @@
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="/">Home</a><span aria-hidden="true">›</span><span>Services</span>
       </nav>
-      <h1 class="page-hero-title">Everything your Magento<br>store needs, from one team</h1>
+      <h1 class="page-hero-title">Everything your Magento <br class="br-lg">store needs, from one team</h1>
       <p class="page-hero-desc">
         Three services built around a single platform. We go deep on Magento instead of spreading thin
         across every framework, so the people who build your store also scale, test, monitor and improve it.
@@ -347,6 +402,45 @@
     </div>
   </section>
 
+  <!-- FAQ -->
+  <section class="section section-dark" id="faq">
+    <div class="container">
+      <div class="faq-layout">
+        <div>
+          <span class="section-label">Questions</span>
+          <h2 class="section-title">Frequently asked questions</h2>
+          <p class="service-lead">Straight answers to what Magento store owners usually ask us first.</p>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Which Magento versions do you work with?</summary>
+            <div class="faq-answer"><p>Magento 2 Open Source and Adobe Commerce. We build new stores, take over existing ones, upgrade older Magento 2 versions and migrate stores from other platforms.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Can you take over a store built by another agency?</summary>
+            <div class="faq-answer"><p>Yes. We start with an audit of the code, extensions, infrastructure and release process, so we know the risks before we change anything. Then we document what we find and agree on priorities with you.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Do we have to move to AWS and Kubernetes?</summary>
+            <div class="faq-answer"><p>No. We recommend infrastructure based on your traffic, catalog size and budget. Often the first gains come from fixing caching, search and slow code on your current hosting. We only propose a move when the numbers justify it.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>How do you use AI without putting our code or data at risk?</summary>
+            <div class="faq-answer"><p>We agree with you upfront which AI tools may be used on your code and data. AI helps us read code, draft changes and write tests, but every change is reviewed by an engineer and goes through the same tests and release process as any other.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>What does the free Magento audit include?</summary>
+            <div class="faq-answer"><p>A review of performance (profiled with New Relic or Tideways), infrastructure, caching, search, extensions and your release process. You get a written, prioritized list of fixes, whether or not you work with us afterwards.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>How do engagements and pricing work?</summary>
+            <div class="faq-answer"><p>Three models: a fixed-scope audit, project delivery with an agreed scope, or a dedicated Magento team billed monthly. After a short call we send an estimate based on your actual store.</p></div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA -->
   <section class="cta-section">
     <div class="container">
@@ -408,6 +502,6 @@
     </div>
   </footer>
 
-  <script src="/js/main.js?v=dcfe5ef8f7" defer></script>
+  <script src="/js/main.js?v=5ed0a0ecc4" defer></script>
 </body>
 </html>

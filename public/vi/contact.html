@@ -21,16 +21,16 @@
   <meta property="og:url" content="https://www.magentiz.com/vi/contact">
   <meta property="og:title" content="Liên hệ Magentiz">
   <meta property="og:description" content="Đăng ký đánh giá Magento miễn phí hoặc trao đổi với kỹ sư Magento về hiệu năng, khả năng hoạt động liên tục, kiểm thử tự động, DevOps, giám sát hay AI. Chúng tôi phản hồi trong vòng một ngày làm việc.">
-  <meta property="og:image" content="https://www.magentiz.com/images/og-image.png">
+  <meta property="og:image" content="https://www.magentiz.com/images/og-image-vi.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Liên hệ Magentiz">
   <meta name="twitter:description" content="Đăng ký đánh giá Magento miễn phí hoặc trao đổi với kỹ sư Magento về hiệu năng, khả năng hoạt động liên tục, kiểm thử tự động, DevOps, giám sát hay AI. Chúng tôi phản hồi trong vòng một ngày làm việc.">
-  <meta name="twitter:image" content="https://www.magentiz.com/images/og-image.png">
+  <meta name="twitter:image" content="https://www.magentiz.com/images/og-image-vi.png">
   <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/css/style.css?v=bc8b4f999d">
+  <link rel="stylesheet" href="/css/style.css?v=286a8c5335">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -113,7 +113,7 @@
 }
   </script>
 </head>
-<body>
+<body data-page="contact">
   <a class="skip-link" href="#main">Chuyển đến nội dung</a>
 
   <!-- NAVBAR -->
@@ -154,7 +154,7 @@
       <nav class="breadcrumb" aria-label="Đường dẫn trang">
         <a href="/vi/">Trang chủ</a><span aria-hidden="true">›</span><span>Liên hệ</span>
       </nav>
-      <h1 class="contact-display-title">Cùng làm cửa hàng<br>Magento của bạn nhanh hơn.</h1>
+      <h1 class="contact-display-title">Cùng làm cửa hàng <br class="br-lg">Magento của bạn nhanh hơn.</h1>
       <a href="mailto:info@magentiz.com" class="contact-email-link">info@magentiz.com</a>
       <div class="contact-hero-meta">
         <span class="contact-meta-item">
@@ -178,7 +178,7 @@
       <div class="contact-layout">
 
         <!-- Form xử lý bằng Netlify Forms, dùng chung tên form với trang tiếng Anh -->
-        <form class="contact-form" name="contact" method="POST" action="/vi/thanks" data-netlify="true" netlify-honeypot="company_website">
+        <form class="contact-form" name="contact" method="POST" action="/vi/thanks" data-netlify="true" netlify-honeypot="company_website" data-sending="Đang gửi…">
           <input type="hidden" name="form-name" value="contact">
           <input type="hidden" name="lang" value="vi">
           <p class="hp-field" aria-hidden="true">
@@ -227,6 +227,8 @@
 
           <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
           <p class="form-note">Chúng tôi chỉ dùng thông tin của bạn để phản hồi yêu cầu này.</p>
+          <p class="form-status is-success" role="status" hidden data-status="success">Cảm ơn bạn! Tin nhắn đã được gửi. Kỹ sư Magento sẽ phản hồi trong vòng một ngày làm việc.</p>
+          <p class="form-status is-error" role="alert" hidden data-status="error">Rất tiếc, chưa gửi được tin nhắn từ trang này. Vui lòng email cho chúng tôi tại <a href="mailto:info@magentiz.com">info@magentiz.com</a>.</p>
         </form>
 
         <!-- Thông tin bên cạnh -->
@@ -321,6 +323,6 @@
     </div>
   </footer>
 
-  <script src="/js/main.js?v=dcfe5ef8f7" defer></script>
+  <script src="/js/main.js?v=5ed0a0ecc4" defer></script>
 </body>
 </html>

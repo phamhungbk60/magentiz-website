@@ -30,7 +30,7 @@
   <meta name="twitter:image" content="https://www.magentiz.com/images/og-image.png">
   <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/css/style.css?v=bc8b4f999d">
+  <link rel="stylesheet" href="/css/style.css?v=286a8c5335">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -113,7 +113,7 @@
 }
   </script>
 </head>
-<body>
+<body data-page="contact">
   <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- NAVBAR -->
@@ -154,7 +154,7 @@
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="/">Home</a><span aria-hidden="true">›</span><span>Contact</span>
       </nav>
-      <h1 class="contact-display-title">Let's make your<br>Magento store faster.</h1>
+      <h1 class="contact-display-title">Let's make your <br class="br-lg">Magento store faster.</h1>
       <a href="mailto:info@magentiz.com" class="contact-email-link">info@magentiz.com</a>
       <div class="contact-hero-meta">
         <span class="contact-meta-item">
@@ -178,7 +178,7 @@
       <div class="contact-layout">
 
         <!-- Form (handled by Netlify Forms) -->
-        <form class="contact-form" name="contact" method="POST" action="/thanks" data-netlify="true" netlify-honeypot="company_website">
+        <form class="contact-form" name="contact" method="POST" action="/thanks" data-netlify="true" netlify-honeypot="company_website" data-sending="Sending…">
           <input type="hidden" name="form-name" value="contact">
           <input type="hidden" name="lang" value="en">
           <p class="hp-field" aria-hidden="true">
@@ -227,6 +227,8 @@
 
           <button type="submit" class="btn btn-primary">Send Message</button>
           <p class="form-note">We only use your details to reply to this request.</p>
+          <p class="form-status is-success" role="status" hidden data-status="success">Thanks! Your message has been sent. A Magento engineer will reply within one business day.</p>
+          <p class="form-status is-error" role="alert" hidden data-status="error">Sorry, your message could not be sent from this page. Please email us at <a href="mailto:info@magentiz.com">info@magentiz.com</a>.</p>
         </form>
 
         <!-- Side info -->
@@ -321,6 +323,6 @@
     </div>
   </footer>
 
-  <script src="/js/main.js?v=dcfe5ef8f7" defer></script>
+  <script src="/js/main.js?v=5ed0a0ecc4" defer></script>
 </body>
 </html>

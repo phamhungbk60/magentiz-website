@@ -35,7 +35,7 @@ description: Đăng ký đánh giá Magento miễn phí hoặc trao đổi với
       <div class="contact-layout">
 
         <!-- Form xử lý bằng Netlify Forms, dùng chung tên form với trang tiếng Anh -->
-        <form class="contact-form" name="contact" method="POST" action="/vi/thanks" data-netlify="true" netlify-honeypot="company_website">
+        <form class="contact-form" name="contact" method="POST" action="/vi/thanks" data-netlify="true" netlify-honeypot="company_website" data-sending="Đang gửi…">
           <input type="hidden" name="form-name" value="contact">
           <input type="hidden" name="lang" value="vi">
           <p class="hp-field" aria-hidden="true">
@@ -84,6 +84,8 @@ description: Đăng ký đánh giá Magento miễn phí hoặc trao đổi với
 
           <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
           <p class="form-note">Chúng tôi chỉ dùng thông tin của bạn để phản hồi yêu cầu này.</p>
+          <p class="form-status is-success" role="status" hidden data-status="success">Cảm ơn bạn! Tin nhắn đã được gửi. Kỹ sư Magento sẽ phản hồi trong vòng một ngày làm việc.</p>
+          <p class="form-status is-error" role="alert" hidden data-status="error">Rất tiếc, chưa gửi được tin nhắn từ trang này. Vui lòng email cho chúng tôi tại <a href="mailto:{{email}}">{{email}}</a>.</p>
         </form>
 
         <!-- Thông tin bên cạnh -->
