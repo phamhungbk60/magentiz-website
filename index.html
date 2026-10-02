@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a0b">
+  <script>try{if(localStorage.getItem("theme")==="light")document.documentElement.classList.add("light")}catch(e){}</script>
+  <title>Magentiz | High-Availability Magento Engineering, Testing, DevOps &amp; AI</title>
+  <meta name="description" content="Magentiz is a Magento engineering team. We build scalable, high-availability Magento stores on AWS and Kubernetes, with Varnish, Redis, OpenSearch, 24/7 monitoring and an AI-assisted workflow.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://www.magentiz.com/">
+  <link rel="alternate" hreflang="en" href="https://www.magentiz.com/">
+  <link rel="alternate" hreflang="vi" href="https://www.magentiz.com/vi/">
+  <link rel="alternate" hreflang="x-default" href="https://www.magentiz.com/">
+  <link rel="icon" href="/magentiz-website/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="/magentiz-website/images/favicon-32.png">
+  <link rel="apple-touch-icon" href="/magentiz-website/images/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Magentiz">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://www.magentiz.com/">
+  <meta property="og:title" content="Magentiz | Magento that stays fast when it matters most">
+  <meta property="og:description" content="Magentiz is a Magento engineering team. We build scalable, high-availability Magento stores on AWS and Kubernetes, with Varnish, Redis, OpenSearch, 24/7 monitoring and an AI-assisted workflow.">
+  <meta property="og:image" content="https://www.magentiz.com/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Magentiz | Magento that stays fast when it matters most">
+  <meta name="twitter:description" content="Magentiz is a Magento engineering team. We build scalable, high-availability Magento stores on AWS and Kubernetes, with Varnish, Redis, OpenSearch, 24/7 monitoring and an AI-assisted workflow.">
+  <meta name="twitter:image" content="https://www.magentiz.com/images/og-image.png">
+  <link rel="preload" href="/magentiz-website/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/magentiz-website/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/magentiz-website/css/style.css?v=a0ceec2dcc">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.magentiz.com/#organization",
+      "name": "Magentiz",
+      "url": "https://www.magentiz.com/",
+      "logo": "https://www.magentiz.com/images/favicon-192.png",
+      "email": "info@magentiz.com",
+      "description": "Magento engineering team: high-availability Magento infrastructure, end-to-end Magento development, automation testing, DevOps, monitoring and AI-assisted delivery.",
+      "knowsAbout": [
+        "Magento 2",
+        "Adobe Commerce",
+        "Varnish",
+        "Redis",
+        "OpenSearch",
+        "Kubernetes",
+        "AWS",
+        "New Relic",
+        "Tideways",
+        "Grafana",
+        "Checkly",
+        "Selenium",
+        "Claude",
+        "OpenAI",
+        "Antigravity"
+      ],
+      "sameAs": [
+        "https://github.com/magentiz"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.magentiz.com/#website",
+      "url": "https://www.magentiz.com/",
+      "name": "Magentiz",
+      "inLanguage": [
+        "en",
+        "vi"
+      ],
+      "publisher": {
+        "@id": "https://www.magentiz.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.magentiz.com/#webpage",
+      "url": "https://www.magentiz.com/",
+      "name": "Magentiz | High-Availability Magento Engineering, Testing, DevOps & AI",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://www.magentiz.com/#website"
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body data-page="index">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="/magentiz-website/" class="nav-logo" aria-label="Magentiz home">
+          <img src="/magentiz-website/images/logo-mark-light.png" srcset="/magentiz-website/images/logo-mark-light@2x.png 2x" alt="" width="40" height="40" class="logo-mark logo-on-dark">
+          <img src="/magentiz-website/images/logo-mark.png" srcset="/magentiz-website/images/logo-mark@2x.png 2x" alt="" width="40" height="40" class="logo-mark logo-on-light">
+          <span class="logo-word">Magentiz</span>
+        </a>
+        <ul class="nav-menu">
+          <li><a href="/magentiz-website/" class="nav-link">Home</a></li>
+          <li><a href="/magentiz-website/services" class="nav-link">Services</a></li>
+          <li><a href="/magentiz-website/technology" class="nav-link">Technology</a></li>
+          <li><a href="/magentiz-website/about" class="nav-link">About</a></li>
+          <li><a href="/magentiz-website/contact" class="nav-cta">Get a Magento Audit</a></li>
+        </ul>
+        <button class="theme-toggle" type="button" aria-label="Toggle light/dark mode">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <span class="lang-opt active" lang="en" aria-current="true">EN</span>
+          <a href="/magentiz-website/vi/" class="lang-opt" hreflang="vi" lang="vi" aria-label="Tiếng Việt">VI</a>
+        </div>
+        <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="dot" aria-hidden="true"></span>
+            Magento &amp; Adobe Commerce engineering team
+          </div>
+          <h1 class="hero-title">
+            Magento that stays fast <br class="br-lg">when it <span class="highlight">matters most</span>
+          </h1>
+          <p class="hero-desc">
+            We build, scale, test, monitor and optimize Magento stores end to end, and we
+            deliver faster because AI tools like Claude, OpenAI and Antigravity are part of
+            how our engineers work every day.
+          </p>
+          <div class="hero-actions">
+            <a href="/magentiz-website/contact" class="btn btn-primary">Get a Free Magento Audit</a>
+            <a href="/magentiz-website/services" class="btn btn-outline">Explore Services</a>
+          </div>
+          <div class="hero-tags">
+            <span class="hero-tag">High Availability</span>
+            <span class="hero-tag">Performance</span>
+            <span class="hero-tag">Automation Testing</span>
+            <span class="hero-tag">DevOps &amp; Monitoring</span>
+            <span class="hero-tag">AI-Applied Team</span>
+          </div>
+        </div>
+
+        <!-- Stack health panel (illustrative) -->
+        <figure class="stack-panel" aria-label="Illustration of a monitored Magento stack">
+          <div class="stack-panel-head">
+            <span class="stack-panel-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="stack-panel-title">magento-prod · stack health</span>
+            <span class="stack-live"><span class="dot" aria-hidden="true"></span>Live</span>
+          </div>
+          <ul class="stack-rows">
+            <li>
+              <span class="stack-name">Varnish</span><span class="stack-role">Full-page cache</span>
+              <span class="stack-bar"><span style="width:94%"></span></span><span class="stack-val">94% hit</span>
+            </li>
+            <li>
+              <span class="stack-name">Redis</span><span class="stack-role">Cache &amp; sessions</span>
+              <span class="stack-bar"><span style="width:88%"></span></span><span class="stack-val">0.4 ms</span>
+            </li>
+            <li>
+              <span class="stack-name">OpenSearch</span><span class="stack-role">Catalog search</span>
+              <span class="stack-bar"><span style="width:76%"></span></span><span class="stack-val">38 ms</span>
+            </li>
+            <li>
+              <span class="stack-name">Kubernetes</span><span class="stack-role">PHP-FPM pods on AWS</span>
+              <span class="stack-bar"><span style="width:62%"></span></span><span class="stack-val">12 / 24</span>
+            </li>
+          </ul>
+          <div class="stack-checks">
+            <div class="stack-check"><span class="stack-check-label">Checkly</span><span class="stack-check-val ok">Checkout ✓</span></div>
+            <div class="stack-check"><span class="stack-check-label">New Relic</span><span class="stack-check-val">Apdex 0.97</span></div>
+            <div class="stack-check"><span class="stack-check-label">Grafana</span><span class="stack-check-val">0 alerts</span></div>
+          </div>
+          <figcaption class="stack-caption">Illustrative dashboard: the signals we watch on every store we run.</figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number"><span data-target="10">10</span>+</span>
+          <div class="stat-label">Years building on Magento</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">24/7</span>
+          <div class="stat-label">Monitoring &amp; alerting</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number"><span data-target="99.9">99.9</span>%</span>
+          <div class="stat-label">Uptime target we design for</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">A–Z</span>
+          <div class="stat-label">Build, test, ship &amp; run</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head-row">
+        <div>
+          <span class="section-label">What We Do</span>
+          <h2 class="section-title">Three services, <br class="br-lg">one Magento focus</h2>
+        </div>
+        <a href="/magentiz-website/services" class="btn btn-outline">See Service Details</a>
+      </div>
+
+      <div class="feature-rows">
+        <div class="feature-row-item reveal">
+          <span class="feature-row-num">01</span>
+          <div>
+            <h3 class="feature-row-title"><a href="/magentiz-website/services#high-availability">Scalable, High-Performance &amp; High-Availability Magento</a></h3>
+            <div class="feature-row-tags">
+              <span class="tech-tag">Varnish</span>
+              <span class="tech-tag">Redis</span>
+              <span class="tech-tag">OpenSearch</span>
+              <span class="tech-tag">Kubernetes</span>
+              <span class="tech-tag">AWS</span>
+            </div>
+          </div>
+          <div>
+            <p class="feature-row-desc">Infrastructure and application tuning so your store stays fast on a normal Tuesday and stays up on Black Friday. No single point of failure, no surprise slowdowns.</p>
+            <ul class="feature-row-list">
+              <li>Multi-node Magento on AWS &amp; Kubernetes with autoscaling</li>
+              <li>Varnish full-page cache, Redis cache &amp; sessions, tuned OpenSearch</li>
+              <li>Zero-downtime deployments and tested failover</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="feature-row-item reveal reveal-delay-2">
+          <span class="feature-row-num">02</span>
+          <div>
+            <h3 class="feature-row-title"><a href="/magentiz-website/services#magento-development">A–Z Development for the Magento Ecosystem</a></h3>
+            <div class="feature-row-tags">
+              <span class="tech-tag">Magento</span>
+              <span class="tech-tag">Selenium</span>
+              <span class="tech-tag">Checkly</span>
+              <span class="tech-tag">New Relic</span>
+              <span class="tech-tag">Tideways</span>
+              <span class="tech-tag">Grafana</span>
+            </div>
+          </div>
+          <div>
+            <p class="feature-row-desc">One team for the whole lifecycle: development, automation testing, DevOps, monitoring and optimization. You don't have to coordinate five vendors.</p>
+            <ul class="feature-row-list">
+              <li>Custom modules, themes, integrations &amp; upgrades</li>
+              <li>Selenium regression suites and Checkly synthetic checks</li>
+              <li>CI/CD, New Relic &amp; Grafana monitoring, Tideways profiling</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="feature-row-item reveal reveal-delay-3">
+          <span class="feature-row-num">03</span>
+          <div>
+            <h3 class="feature-row-title"><a href="/magentiz-website/services#ai-team">Magento Team with Applied AI Skills</a></h3>
+            <div class="feature-row-tags">
+              <span class="tech-tag">Claude</span>
+              <span class="tech-tag">OpenAI</span>
+              <span class="tech-tag">Antigravity</span>
+            </div>
+          </div>
+          <div>
+            <p class="feature-row-desc">Magento engineers who use AI in their daily work and know where it helps. The result is faster delivery, broader test coverage and AI features that work in production.</p>
+            <ul class="feature-row-list">
+              <li>AI-assisted coding, code review &amp; upgrade analysis</li>
+              <li>AI-generated test scenarios and documentation</li>
+              <li>AI features for your store: search, content, support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-head-row">
+        <div>
+          <span class="section-label">Our Stack</span>
+          <h2 class="section-title">The tools we run <br class="br-lg">Magento with</h2>
+        </div>
+        <a href="/magentiz-website/technology" class="btn btn-outline">How We Use Each Tool</a>
+      </div>
+
+      <div class="stack-groups stagger-children">
+        <div class="stack-group">
+          <p class="stack-group-title"><span class="stack-group-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"/></svg></span>Platform</p>
+          <ul class="stack-group-list"><li>Magento 2</li><li>Adobe Commerce</li></ul>
+        </div>
+        <div class="stack-group">
+          <p class="stack-group-title"><span class="stack-group-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg></span>Performance</p>
+          <ul class="stack-group-list"><li>Varnish</li><li>Redis</li><li>OpenSearch</li></ul>
+        </div>
+        <div class="stack-group">
+          <p class="stack-group-title"><span class="stack-group-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z"/></svg></span>Cloud &amp; DevOps</p>
+          <ul class="stack-group-list"><li>AWS</li><li>Kubernetes</li></ul>
+        </div>
+        <div class="stack-group">
+          <p class="stack-group-title"><span class="stack-group-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"/></svg></span>Observability</p>
+          <ul class="stack-group-list"><li>New Relic</li><li>Tideways</li><li>Grafana</li><li>Checkly</li></ul>
+        </div>
+        <div class="stack-group">
+          <p class="stack-group-title"><span class="stack-group-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg></span>Testing</p>
+          <ul class="stack-group-list"><li>Selenium</li><li>Checkly</li></ul>
+        </div>
+        <div class="stack-group">
+          <p class="stack-group-title"><span class="stack-group-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg></span>AI</p>
+          <ul class="stack-group-list"><li>Claude</li><li>OpenAI</li><li>Antigravity</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head-row">
+        <div>
+          <span class="section-label">How We Work</span>
+          <h2 class="section-title">From audit to <br class="br-lg">always-on</h2>
+        </div>
+      </div>
+
+      <div class="num-list">
+        <div class="num-list-item reveal">
+          <span class="num-list-num">01</span>
+          <div>
+            <h3 class="num-list-title">Audit</h3>
+            <p class="num-list-desc">We profile your store with New Relic and Tideways, review infrastructure, caching and code, and show you where the time and money go.</p>
+          </div>
+        </div>
+        <div class="num-list-item reveal reveal-delay-1">
+          <span class="num-list-num">02</span>
+          <div>
+            <h3 class="num-list-title">Stabilize</h3>
+            <p class="num-list-desc">We fix the bottlenecks first: slow queries, cache misses, heavy extensions and fragile deployments.</p>
+          </div>
+        </div>
+        <div class="num-list-item reveal reveal-delay-2">
+          <span class="num-list-num">03</span>
+          <div>
+            <h3 class="num-list-title">Scale</h3>
+            <p class="num-list-desc">We move to a high-availability setup on AWS and Kubernetes, with Varnish, Redis and OpenSearch tuned for your catalog and traffic.</p>
+          </div>
+        </div>
+        <div class="num-list-item reveal reveal-delay-3">
+          <span class="num-list-num">04</span>
+          <div>
+            <h3 class="num-list-title">Automate</h3>
+            <p class="num-list-desc">Selenium regression suites and CI/CD pipelines, so every release goes out tested and with no downtime.</p>
+          </div>
+        </div>
+        <div class="num-list-item reveal reveal-delay-4">
+          <span class="num-list-num">05</span>
+          <div>
+            <h3 class="num-list-title">Monitor</h3>
+            <p class="num-list-desc">Grafana dashboards, New Relic alerting and Checkly checks on checkout and search, around the clock.</p>
+          </div>
+        </div>
+        <div class="num-list-item reveal reveal-delay-5">
+          <span class="num-list-num">06</span>
+          <div>
+            <h3 class="num-list-title">Evolve with AI</h3>
+            <p class="num-list-desc">Claude, OpenAI and Antigravity speed up upgrades, testing and new features, so you get more done on the same budget.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <span class="section-label">Ready for the Next Peak?</span>
+      <h2 class="section-title">Find out how fast and resilient <br class="br-lg">your Magento store really is</h2>
+      <p class="section-subtitle">
+        Get a free Magento audit. We'll profile performance, review your infrastructure and send you a prioritized list of fixes.
+      </p>
+      <div class="cta-actions">
+        <a href="/magentiz-website/contact" class="btn btn-primary">Request a Free Audit</a>
+        <a href="/magentiz-website/technology" class="btn btn-outline">Explore Our Stack</a>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/magentiz-website/" class="nav-logo" aria-label="Magentiz home">
+            <img src="/magentiz-website/images/logo-mark-light.png" srcset="/magentiz-website/images/logo-mark-light@2x.png 2x" alt="" width="40" height="40" class="logo-mark logo-on-dark" loading="lazy">
+            <img src="/magentiz-website/images/logo-mark.png" srcset="/magentiz-website/images/logo-mark@2x.png 2x" alt="" width="40" height="40" class="logo-mark logo-on-light" loading="lazy">
+            <span class="logo-word">Magentiz</span>
+          </a>
+          <p>Magento engineering team for stores that cannot afford to be slow or offline. Build, test, ship, monitor and optimize, with AI built into how we work.</p>
+        </div>
+        <div>
+          <p class="footer-col-title">Services</p>
+          <ul class="footer-links">
+            <li><a href="/magentiz-website/services#high-availability">High-Availability Magento</a></li>
+            <li><a href="/magentiz-website/services#magento-development">A–Z Magento Development</a></li>
+            <li><a href="/magentiz-website/services#ai-team">AI-Applied Magento Team</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Technology</p>
+          <ul class="footer-links">
+            <li><a href="/magentiz-website/technology#performance">Performance &amp; Caching</a></li>
+            <li><a href="/magentiz-website/technology#observability">Monitoring &amp; Observability</a></li>
+            <li><a href="/magentiz-website/technology#ai">AI Tooling</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Company</p>
+          <ul class="footer-links">
+            <li><a href="/magentiz-website/about">About</a></li>
+            <li><a href="/magentiz-website/contact">Contact</a></li>
+            <li><a href="https://github.com/magentiz" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Magentiz. All rights reserved.</p>
+        <p class="footer-copy">
+          <a href="mailto:info@magentiz.com" class="footer-accent-link">info@magentiz.com</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/magentiz-website/js/main.js?v=4a63b66e21" defer></script>
+</body>
+</html>
