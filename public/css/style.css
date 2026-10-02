@@ -3619,3 +3619,9 @@ h1, h2, h3,
   justify-content: flex-start;
   margin-top: 24px;
 }
+
+/* Links inside contact values are underlined, not distinguished by colour alone */
+.contact-info-value a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
