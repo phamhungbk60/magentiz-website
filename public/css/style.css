@@ -2278,82 +2278,8 @@ html.light .stack-check-val.ok {
 /* Form rows: fields already carry their own bottom margin */
 
 /* --- Case study (homepage) --- */
-.case-study {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 56px;
-  align-items: start;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-xl);
-  padding: 48px;
-  position: relative;
-  overflow: hidden;
-}
-
-.case-study::before {
-  content: '';
-  position: absolute;
-  inset: 0 0 auto 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--brand), transparent 70%);
-}
-
-.case-lead {
-  color: var(--text-secondary);
-  line-height: 1.8;
-  margin-bottom: 24px;
-  max-width: 60ch;
-}
-
-.case-facts {
-  display: grid;
-  gap: 0;
-}
-
-.case-facts li {
-  padding: 18px 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.case-facts li:first-child {
-  padding-top: 0;
-}
-
-.case-facts li:last-child {
-  border-bottom: none;
-}
-
-.case-fact-title {
-  display: block;
-  font-family: var(--font-display);
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  color: var(--text-primary);
-  margin-bottom: 4px;
-}
-
-.case-fact-text {
-  font-size: 0.88rem;
-  color: var(--text-secondary);
-  line-height: 1.65;
-}
 
 /* --- Inline text links --- */
-
-@media (max-width: 1024px) {
-  .case-study {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-}
-
-@media (max-width: 560px) {
-  .case-study {
-    padding: 28px 20px;
-  }
-}
 
 /* =============================================
    NAV — collapsed menu (tablet & mobile, ≤ 960px)
@@ -2764,8 +2690,7 @@ h1, h2, h3,
 
 .section-label,
 .stack-group-title,
-.tool-role,
-.case-study .section-label {
+.tool-role {
   font-size: 0.75rem;
 }
 
@@ -2919,16 +2844,6 @@ h1, h2, h3,
 }
 
 /* ---- Case study ---- */
-.case-study {
-  grid-template-columns: 1fr;
-  gap: 28px;
-  padding: 28px 20px;
-  border-radius: var(--radius-lg);
-}
-
-.case-study .btn {
-  width: 100%;
-}
 
 /* ---- Stack groups: 2 columns on phones ---- */
 .stack-groups {
@@ -3145,7 +3060,6 @@ h1, h2, h3,
   }
 
   .hero-actions .btn,
-  .case-study .btn,
   .service-grid .btn,
   .service-cta-row .btn,
   .ai-full-grid .btn {
@@ -3195,10 +3109,6 @@ h1, h2, h3,
     flex-direction: row;
     flex-wrap: wrap;
     gap: 12px 28px;
-  }
-
-  .case-study {
-    padding: 40px 32px;
   }
 
   .cta-section > .container {
@@ -3366,13 +3276,6 @@ h1, h2, h3,
     font-size: 1.6rem;
   }
 
-  .case-study {
-    grid-template-columns: 1.1fr 1fr;
-    gap: 56px;
-    padding: 48px;
-    border-radius: var(--radius-xl);
-  }
-
   .page-hero,
   .contact-hero-bold {
     padding: calc(var(--nav-height) + 80px) 0 80px;
@@ -3449,7 +3352,6 @@ h1, h2, h3,
 
 /* Grid children may shrink below their content (fixes hero overflow on phones) */
 .hero-inner > *,
-.case-study > *,
 .page-hero-split > *,
 .faq-layout > *,
 .service-grid > *,
