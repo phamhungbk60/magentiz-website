@@ -17,7 +17,10 @@ git init -q
 git checkout -q -b gh-pages
 git add -A
 git commit -q -m "Preview build of $(git -C "$OLDPWD" rev-parse --short HEAD 2>/dev/null || echo main)"
-git push -q -f "$(git -C "$OLDPWD" remote get-url origin)" gh-pages
+# Use the GitHub CLI login for this push when available (ignores other stored credentials)
+auth=()
+command -v gh >/dev/null && auth=(-c credential.helper= -c 'credential.helper=!gh auth git-credential')
+git "${auth[@]}" push -q -f "$(git -C "$OLDPWD" remote get-url origin)" gh-pages
 cd - >/dev/null
 git worktree remove --force "$tmp"
 echo "Preview pushed to gh-pages."
