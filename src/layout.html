@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a0b">
+  <script>{{theme_script}}</script>
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <meta name="robots" content="{{robots}}">
+  <link rel="canonical" href="{{canonical}}">
+{{alternates}}
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Magentiz">
+  <meta property="og:locale" content="{{og_locale}}">
+  <meta property="og:url" content="{{canonical}}">
+  <meta property="og:title" content="{{og_title}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:image" content="{{site}}/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{og_title}}">
+  <meta name="twitter:description" content="{{description}}">
+  <meta name="twitter:image" content="{{site}}/images/og-image.png">
+  <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css?v={{css_version}}">
+  <script type="application/ld+json">
+{{jsonld}}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">{{t_skip}}</a>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" aria-label="{{t_nav_label}}">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="{{home}}" class="nav-logo" aria-label="{{t_home_label}}">
+          <img src="/images/logo-mark-light.png" srcset="/images/logo-mark-light@2x.png 2x" alt="" width="40" height="40" class="logo-mark logo-on-dark">
+          <img src="/images/logo-mark.png" srcset="/images/logo-mark@2x.png 2x" alt="" width="40" height="40" class="logo-mark logo-on-light">
+          <span class="logo-word">Magentiz</span>
+        </a>
+        <ul class="nav-menu">
+          <li><a href="{{home}}" class="nav-link">{{t_nav_home}}</a></li>
+          <li><a href="{{p}}/services" class="nav-link">{{t_nav_services}}</a></li>
+          <li><a href="{{p}}/technology" class="nav-link">{{t_nav_technology}}</a></li>
+          <li><a href="{{p}}/about" class="nav-link">{{t_nav_about}}</a></li>
+          <li><a href="{{p}}/contact" class="nav-cta">{{t_nav_cta}}</a></li>
+        </ul>
+        <button class="theme-toggle" type="button" aria-label="{{t_theme}}">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+{{lang_switch}}
+        <button class="nav-toggle" type="button" aria-label="{{t_menu}}" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+{{content}}
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="{{home}}" class="nav-logo" aria-label="{{t_home_label}}">
+            <img src="/images/logo-mark-light.png" srcset="/images/logo-mark-light@2x.png 2x" alt="" width="40" height="40" class="logo-mark logo-on-dark" loading="lazy">
+            <img src="/images/logo-mark.png" srcset="/images/logo-mark@2x.png 2x" alt="" width="40" height="40" class="logo-mark logo-on-light" loading="lazy">
+            <span class="logo-word">Magentiz</span>
+          </a>
+          <p>{{t_footer_about}}</p>
+          <p class="footer-parent">{{t_parent_note}}</p>
+        </div>
+        <div>
+          <p class="footer-col-title">{{t_nav_services}}</p>
+          <ul class="footer-links">
+            <li><a href="{{p}}/services#high-availability">{{t_f_ha}}</a></li>
+            <li><a href="{{p}}/services#magento-development">{{t_f_dev}}</a></li>
+            <li><a href="{{p}}/services#ai-team">{{t_f_ai}}</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">{{t_nav_technology}}</p>
+          <ul class="footer-links">
+            <li><a href="{{p}}/technology#performance">{{t_f_perf}}</a></li>
+            <li><a href="{{p}}/technology#observability">{{t_f_obs}}</a></li>
+            <li><a href="{{p}}/technology#ai">{{t_f_aitools}}</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">{{t_f_company}}</p>
+          <ul class="footer-links">
+            <li><a href="{{p}}/about">{{t_nav_about}}</a></li>
+            <li><a href="{{p}}/contact">{{t_f_contact}}</a></li>
+            <li><a href="https://github.com/magentiz" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; {{year}} Magentiz. {{t_rights}}</p>
+        <p class="footer-copy">
+          <a href="mailto:{{email}}" class="footer-accent-link">{{email}}</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js?v={{js_version}}" defer></script>
+</body>
+</html>

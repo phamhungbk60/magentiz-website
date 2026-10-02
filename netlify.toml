@@ -1,0 +1,7 @@
+# Only public/ is published, so repo files (build.py, src/, README) are never served.
+[build]
+  publish = "public"
+  command = "python3 build.py"
+
+# Canonical host is www.magentiz.com: set it as the primary domain in
+# Netlify > Domain management so the apex redirects to it automatically.

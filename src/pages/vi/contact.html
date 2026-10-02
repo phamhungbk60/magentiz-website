@@ -1,0 +1,131 @@
+---
+breadcrumb: Liên hệ
+priority: 0.7
+title: Liên hệ Magentiz | Đăng ký đánh giá Magento miễn phí
+og_title: Liên hệ Magentiz
+description: Đăng ký đánh giá Magento miễn phí hoặc trao đổi với kỹ sư Magento về hiệu năng, khả năng hoạt động liên tục, kiểm thử tự động, DevOps, giám sát hay AI. Chúng tôi phản hồi trong vòng một ngày làm việc.
+---
+  <!-- PAGE HERO -->
+  <section class="contact-hero-bold">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Đường dẫn trang">
+        <a href="/vi/">Trang chủ</a><span aria-hidden="true">›</span><span>Liên hệ</span>
+      </nav>
+      <h1 class="contact-display-title">Cùng làm cửa hàng<br>Magento của bạn nhanh hơn.</h1>
+      <a href="mailto:{{email}}" class="contact-email-link">{{email}}</a>
+      <div class="contact-hero-meta">
+        <span class="contact-meta-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+          Phản hồi trong 1 ngày làm việc
+        </span>
+        <span class="contact-meta-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+          Đánh giá miễn phí, không ràng buộc
+        </span>
+        <span class="contact-meta-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
+          Có thể ký thỏa thuận bảo mật theo yêu cầu
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Form xử lý bằng Netlify Forms, dùng chung tên form với trang tiếng Anh -->
+        <form class="contact-form" name="contact" method="POST" action="/vi/thanks" data-netlify="true" netlify-honeypot="company_website">
+          <input type="hidden" name="form-name" value="contact">
+          <input type="hidden" name="lang" value="vi">
+          <p class="hp-field" aria-hidden="true">
+            <label>Để trống ô này <input name="company_website" tabindex="-1" autocomplete="off"></label>
+          </p>
+
+          <h2 class="contact-form-title">Kể cho chúng tôi về cửa hàng của bạn</h2>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="f-name">Họ tên <span aria-hidden="true">*</span></label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="form-field">
+              <label for="f-email">Email công việc <span aria-hidden="true">*</span></label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="f-company">Công ty</label>
+              <input id="f-company" name="company" type="text" autocomplete="organization">
+            </div>
+            <div class="form-field">
+              <label for="f-store">Địa chỉ website cửa hàng</label>
+              <input id="f-store" name="store_url" type="url" inputmode="url" placeholder="https://">
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="f-service">Bạn cần hỗ trợ về việc gì?</label>
+            <select id="f-service" name="service">
+              <option value="audit">Đánh giá Magento miễn phí</option>
+              <option value="high-availability">Mở rộng, hiệu năng &amp; hoạt động liên tục</option>
+              <option value="development">Phát triển, kiểm thử, DevOps &amp; giám sát</option>
+              <option value="ai">Đội Magento ứng dụng AI hoặc tính năng AI</option>
+              <option value="other">Việc khác</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="f-message">Nội dung <span aria-hidden="true">*</span></label>
+            <textarea id="f-message" name="message" rows="5" required placeholder="Phiên bản Magento, nhà cung cấp máy chủ, lượng truy cập, vấn đề đang gặp…"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+          <p class="form-note">Chúng tôi chỉ dùng thông tin của bạn để phản hồi yêu cầu này.</p>
+        </form>
+
+        <!-- Thông tin bên cạnh -->
+        <aside class="contact-side">
+          <div class="card contact-next">
+            <h2 class="card-title">Điều gì xảy ra tiếp theo?</h2>
+            <div class="process-step">
+              <div class="process-step-num">1</div>
+              <p class="process-step-text">Một kỹ sư Magento, không phải nhân viên kinh doanh, sẽ đọc tin nhắn và phản hồi trong vòng một ngày làm việc.</p>
+            </div>
+            <div class="process-step">
+              <div class="process-step-num">2</div>
+              <p class="process-step-text">Chúng tôi hẹn một cuộc gọi 30 phút và, nếu cần, xin quyền xem (không chỉnh sửa) New Relic hoặc trang quản trị cửa hàng để kiểm tra nhanh.</p>
+            </div>
+            <div class="process-step">
+              <div class="process-step-num">3</div>
+              <p class="process-step-text">Bạn nhận một bản tóm tắt ngắn: những gì chúng tôi tìm thấy, việc nên sửa trước và ước tính chi phí.</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
+              </div>
+              <div>
+                <p class="contact-info-label">Email</p>
+                <p class="contact-info-value"><a href="mailto:{{email}}">{{email}}</a></p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg>
+              </div>
+              <div>
+                <p class="contact-info-label">GitHub</p>
+                <p class="contact-info-value"><a href="https://github.com/magentiz" rel="noopener">github.com/magentiz</a></p>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>

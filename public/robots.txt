@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /thanks
+Disallow: /vi/thanks
+
+Sitemap: https://www.magentiz.com/sitemap.xml

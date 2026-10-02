@@ -1,0 +1,189 @@
+---
+breadcrumb: Công nghệ
+priority: 0.7
+title: Công nghệ Magento: AWS, Kubernetes, Varnish, Redis, OpenSearch, New Relic và AI | Magentiz
+og_title: Bộ công nghệ Magento của Magentiz
+description: Cách chúng tôi dùng AWS, Kubernetes, Varnish, Redis, OpenSearch, New Relic, Tideways, Grafana, Checkly, Selenium, Claude, OpenAI và Antigravity để vận hành cửa hàng Magento nhanh và ổn định.
+---
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Đường dẫn trang">
+        <a href="/vi/">Trang chủ</a><span aria-hidden="true">›</span><span>Công nghệ</span>
+      </nav>
+      <h1 class="page-hero-title">Bộ công nghệ đứng sau<br>một cửa hàng Magento nhanh</h1>
+      <p class="page-hero-desc">
+        Mỗi công cụ ở đây có một nhiệm vụ cụ thể: giữ cho Magento nhanh, ổn định và dễ thay đổi.
+        Đây là những gì chúng tôi dùng và lý do chúng tôi dùng.
+      </p>
+      <div class="page-jump">
+        <a href="#platform"><span>01</span> Nền tảng</a>
+        <a href="#performance"><span>02</span> Hiệu năng</a>
+        <a href="#cloud"><span>03</span> Hạ tầng &amp; DevOps</a>
+        <a href="#observability"><span>04</span> Giám sát</a>
+        <a href="#testing"><span>05</span> Kiểm thử</a>
+        <a href="#ai"><span>06</span> Trí tuệ nhân tạo</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Nền tảng -->
+      <div class="tool-layer" id="platform">
+        <div class="tool-layer-head">
+          <span class="tool-layer-num">01</span>
+          <h2 class="tool-layer-title">Nền tảng</h2>
+          <p class="tool-layer-desc">Nền tảng thương mại điện tử chúng tôi chuyên sâu.</p>
+        </div>
+        <div class="tool-grid">
+          <article class="tool-card">
+            <h3 class="tool-name">Magento 2 / Adobe Commerce</h3>
+            <p class="tool-role">Bản mã nguồn mở &amp; bản thương mại</p>
+            <p class="tool-text">Mô-đun và giao diện theo yêu cầu, bán hàng doanh nghiệp (B2B), nhiều cửa hàng và nhiều ngôn ngữ, tích hợp qua API, nâng cấp phiên bản mà không mất dữ liệu hay thứ hạng tìm kiếm.</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Hiệu năng -->
+      <div class="tool-layer" id="performance">
+        <div class="tool-layer-head">
+          <span class="tool-layer-num">02</span>
+          <h2 class="tool-layer-title">Hiệu năng &amp; bộ nhớ đệm</h2>
+          <p class="tool-layer-desc">Những gì giữ thời gian phản hồi thấp khi tải cao.</p>
+        </div>
+        <div class="tool-grid">
+          <article class="tool-card">
+            <h3 class="tool-name">Varnish</h3>
+            <p class="tool-role">Bộ nhớ đệm toàn trang</p>
+            <p class="tool-text">Trả về trang đã lưu sẵn mà không cần chạy PHP. Chúng tôi tinh chỉnh cấu hình Varnish, cách tách phần nội dung động và cơ chế làm mới bộ nhớ đệm, để phần lớn lượt truy cập không phải xử lý qua Magento.</p>
+          </article>
+          <article class="tool-card">
+            <h3 class="tool-name">Redis</h3>
+            <p class="tool-role">Bộ nhớ đệm &amp; phiên làm việc</p>
+            <p class="tool-text">Tách riêng Redis cho bộ nhớ đệm và cho phiên làm việc, định cỡ và cấu hình sao cho việc khóa dữ liệu và giải phóng bộ nhớ không bao giờ làm chậm bước thanh toán.</p>
+          </article>
+          <article class="tool-card">
+            <h3 class="tool-name">OpenSearch</h3>
+            <p class="tool-role">Tìm kiếm &amp; lọc sản phẩm</p>
+            <p class="tool-text">Thiết kế chỉ mục, bộ phân tích từ ngữ và định cỡ cụm máy chủ cho tìm kiếm nhanh, bộ lọc sản phẩm và tìm kiếm theo ý nghĩa trên danh mục lớn.</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Hạ tầng -->
+      <div class="tool-layer" id="cloud">
+        <div class="tool-layer-head">
+          <span class="tool-layer-num">03</span>
+          <h2 class="tool-layer-title">Hạ tầng đám mây &amp; DevOps</h2>
+          <p class="tool-layer-desc">Hạ tầng được xây dựng để hoạt động liên tục.</p>
+        </div>
+        <div class="tool-grid">
+          <article class="tool-card">
+            <h3 class="tool-name">AWS</h3>
+            <p class="tool-role">Hạ tầng đám mây</p>
+            <p class="tool-text">Triển khai trên nhiều vùng hạ tầng, cơ sở dữ liệu được quản lý sẵn, lưu trữ tệp và mạng phân phối nội dung, với hạ tầng quản lý bằng mã và kiểm soát chi phí ngay từ đầu.</p>
+          </article>
+          <article class="tool-card">
+            <h3 class="tool-name">Kubernetes</h3>
+            <p class="tool-role">Điều phối &amp; tự động mở rộng</p>
+            <p class="tool-text">Magento đóng gói thành container, tự động thêm máy chủ khi tải tăng, cập nhật cuốn chiếu hoặc song song, và tự khởi động lại khi có sự cố.</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Giám sát -->
+      <div class="tool-layer" id="observability">
+        <div class="tool-layer-head">
+          <span class="tool-layer-num">04</span>
+          <h2 class="tool-layer-title">Giám sát hệ thống</h2>
+          <p class="tool-layer-desc">Chúng tôi thấy sự cố trước khách hàng của bạn.</p>
+        </div>
+        <div class="tool-grid">
+          <article class="tool-card">
+            <h3 class="tool-name">New Relic</h3>
+            <p class="tool-role">Giám sát hiệu năng &amp; cảnh báo</p>
+            <p class="tool-text">Theo dõi từng giao dịch, truy vấn cơ sở dữ liệu chậm, độ trễ khi gọi dịch vụ bên ngoài và tỷ lệ lỗi, với cảnh báo gắn vào các trang ảnh hưởng trực tiếp đến doanh thu.</p>
+          </article>
+          <article class="tool-card">
+            <h3 class="tool-name">Tideways</h3>
+            <p class="tool-role">Phân tích hiệu năng PHP</p>
+            <p class="tool-text">Đo thời gian chạy đến từng hàm, được thiết kế cho PHP và Magento. Chúng tôi dùng nó để tìm mã chạy chậm và các thành phần mở rộng nặng, rồi xác nhận hiệu quả sau mỗi lần sửa.</p>
+          </article>
+          <article class="tool-card">
+            <h3 class="tool-name">Grafana</h3>
+            <p class="tool-role">Bảng theo dõi &amp; chỉ số</p>
+            <p class="tool-text">Một màn hình chung cho hạ tầng, hiệu quả bộ nhớ đệm, hàng đợi xử lý và các chỉ số kinh doanh, chia sẻ với đội của bạn.</p>
+          </article>
+          <article class="tool-card">
+            <h3 class="tool-name">Checkly</h3>
+            <p class="tool-role">Giám sát mô phỏng người dùng</p>
+            <p class="tool-text">Kịch bản trình duyệt tự động thực hiện tìm kiếm, thêm vào giỏ và thanh toán vài phút một lần, từ nhiều khu vực khác nhau.</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Kiểm thử -->
+      <div class="tool-layer" id="testing">
+        <div class="tool-layer-head">
+          <span class="tool-layer-num">05</span>
+          <h2 class="tool-layer-title">Kiểm thử tự động</h2>
+          <p class="tool-layer-desc">Mọi bản cập nhật đều được kiểm thử trước khi khách hàng nhìn thấy.</p>
+        </div>
+        <div class="tool-grid">
+          <article class="tool-card">
+            <h3 class="tool-name">Selenium</h3>
+            <p class="tool-role">Kiểm thử hồi quy toàn luồng</p>
+            <p class="tool-text">Bộ kiểm thử trên trình duyệt cho các luồng chính ở giao diện cửa hàng và trang quản trị, tự động chạy mỗi khi có thay đổi mã nguồn và trước mỗi lần cập nhật.</p>
+          </article>
+          <article class="tool-card">
+            <h3 class="tool-name">Checkly</h3>
+            <p class="tool-role">Kiểm thử liên tục trên cửa hàng thật</p>
+            <p class="tool-text">Các luồng quan trọng tiếp tục được kiểm tra trên cửa hàng thật sau khi cập nhật, nên lỗi phát sinh được phát hiện chỉ sau vài phút.</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- AI -->
+      <div class="tool-layer" id="ai">
+        <div class="tool-layer-head">
+          <span class="tool-layer-num">06</span>
+          <h2 class="tool-layer-title">Ứng dụng trí tuệ nhân tạo</h2>
+          <p class="tool-layer-desc">Dùng xuyên suốt quá trình làm việc, luôn có kỹ sư duyệt lại.</p>
+        </div>
+        <div class="tool-grid">
+          <article class="tool-card">
+            <h3 class="tool-name">Claude</h3>
+            <p class="tool-role">Trợ lý lập trình &amp; rà soát mã nguồn</p>
+            <p class="tool-text">Đọc hiểu mã nguồn Magento cũ và lớn, soạn nháp mô-đun và bài kiểm thử, rà soát thay đổi mã nguồn và viết tài liệu kỹ thuật.</p>
+          </article>
+          <article class="tool-card">
+            <h3 class="tool-name">OpenAI</h3>
+            <p class="tool-role">Mô hình AI cho tính năng cửa hàng</p>
+            <p class="tool-text">Tìm kiếm sản phẩm theo ý nghĩa, tạo nội dung sản phẩm và trợ lý hỗ trợ khách hàng kết nối với dữ liệu Magento.</p>
+          </article>
+          <article class="tool-card">
+            <h3 class="tool-name">Antigravity</h3>
+            <p class="tool-role">Môi trường lập trình với trợ lý AI tự động</p>
+            <p class="tool-text">Công cụ lập trình của Google, nơi trợ lý AI tự thực hiện các việc nhiều bước như chuẩn bị nâng cấp, tái cấu trúc mã nguồn và soạn bài kiểm thử. Kỹ sư duyệt lại mọi thay đổi.</p>
+          </article>
+        </div>
+      </div>
+
+      <p class="trademark-note">Tên sản phẩm là thương hiệu của chủ sở hữu tương ứng, được nêu để mô tả công cụ đội ngũ chúng tôi sử dụng, không hàm ý quan hệ đối tác hay sự bảo trợ.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <span class="section-label">Áp dụng cho cửa hàng của bạn</span>
+      <h2 class="section-title">Muốn bộ công nghệ này vận hành cửa hàng Magento của bạn?</h2>
+      <p class="section-subtitle">Cho chúng tôi biết bạn đang dùng những gì. Chúng tôi sẽ chỉ ra nên thay đổi gì trước và sẽ cải thiện được gì.</p>
+      <div class="cta-actions">
+        <a href="/vi/contact" class="btn btn-primary">Trao đổi với kỹ sư</a>
+        <a href="/vi/services" class="btn btn-outline">Xem dịch vụ</a>
+      </div>
+    </div>
+  </section>
